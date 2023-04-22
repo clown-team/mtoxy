@@ -44,7 +44,6 @@ public class StatisticsReporter {
 
             if (cfg.hasHttpBackend()) {
                 LOG.info("MTProto statistics: {}", formatStatistics(ConnectionType.MTPROTO));
-                LOG.info("HTTP statistics:    {}", formatStatistics(ConnectionType.HTTP));
             } else {
                 LOG.info("Traffic statistics: {}", formatStatistics(ConnectionType.MTPROTO));
             }
